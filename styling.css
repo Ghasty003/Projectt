@@ -8,7 +8,7 @@
 /* Head section*/
 
 header{
-    background-image: url(/images/pimage9.jpeg);
+    background-image: url(images/pimage9.jpeg);
     z-index: -1;
     height: 500px;
     background-position: center;
