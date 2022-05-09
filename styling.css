@@ -499,7 +499,7 @@ nav{
 
 /*Footer Section*/
 
-.footer-div-0{
+footer{
     background-color: rgb(16, 15, 15);
     margin-top: 150px;
     height: 650px;
@@ -1162,5 +1162,13 @@ nav{
 
     .div-7 p{
         font-size: 17px;
+    }
+
+    .form-sec-1 form input{
+        width: 250px;
+    }
+
+    .form-sec-2 form textarea{
+        width: 250px;
     }
 }
