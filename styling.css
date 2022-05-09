@@ -1115,7 +1115,7 @@ footer{
 
 @media screen and (max-width:400px){
     .head-elements h2{
-        font-size: 30px;
+        font-size: 40px;
         width: 80%;
         display: flex;
         align-items: center;
@@ -1165,10 +1165,38 @@ footer{
     }
 
     .form-sec-1 form input{
-        width: 250px;
+        width: 256px;
     }
 
     .form-sec-2 form textarea{
-        width: 250px;
+        width: 260px;
+    }
+
+    footer{
+        height: 750px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-div-1-1{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .footer-div-2{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .footer-div-3{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
     }
 }
