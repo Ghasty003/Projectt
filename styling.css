@@ -10,7 +10,7 @@
 header{
     background-image: url(images/pimage9.jpeg);
     z-index: -1;
-    height: 500px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,6 +58,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     z-index: 999;
    
 }
@@ -749,7 +750,7 @@ footer{
 
 /*Media query 780px*/
 
-@media all and (max-width:780px){
+@media all and (max-width:788px){
     .head-elements h2{
         font-size: 50px;
     }
