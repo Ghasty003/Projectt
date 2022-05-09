@@ -200,6 +200,10 @@ nav{
     justify-content: center;
     font-size: 50px;
     font-weight: 500;
+    width: 90%;
+    margin-left: auto;
+    margin-left: auto;
+    text-align: center;
 }
 
 .div-3{
@@ -691,6 +695,23 @@ footer{
     }
 }
 
+@media all and (max-width:1000px){
+    .div-3{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div-3-2{
+        margin: 50px 0;
+    }
+}
+
 /*Media query 950px*/
 
 @media all and (max-width:950px){
@@ -761,22 +782,6 @@ footer{
 
     .sec-2 h1{
         font-size: 40px;
-    }
-
-    .div-3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .div-3-2{
-        margin: 50px 0;
-        margin-left: 100px;
-    }
-
-    .div-3-3{
-        margin-left: 170px;
     }
     
     .div-5{
