@@ -15,40 +15,65 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    
+    background-attachment: fixed;
 }
 
-.heads{
+.burger{
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+nav{
     display: flex;
     align-items: center;
-    width: 100%;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.548);
+    justify-content: space-around;
     position: fixed;
     top: 0;
-    justify-content: center;
+    width: 100%;
 }
 
 .img1{
-    flex: 1;
-    align-items: center;
     margin-top: 20px;
-    margin-left: 40px;
-
-}
-nav{
-    flex: 1;
 }
 
 .nav-links{
     display: flex;
-    justify-content: space-around;
     list-style-type: none;
 }
 
 .nav-link{
     text-decoration: none;
     color: white;
+    padding: 40px;
+}
+
+.nav-link:hover{
+    opacity: 0.4;
 }
 
 .head-elements{
@@ -756,17 +781,50 @@ footer{
     }
 }
 
-@media screen and (max-width:790px){
-    nav{
+
+@media all and (max-width:885px){
+    .nav-links{
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         display: none;
     }
 
-    .img1 img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 100px;
+    .nav-links li{
+        padding: 20px;
+        font-size: 19px;
+        text-align: center;
     }
+
+    .nav-links li:first-child{
+        margin-top: 120px;
+    }
+
+    .burger{
+        display: block;
+        z-index: 100;
+        position: absolute;
+        right: 15px;
+    }
+
+    .burger:hover{
+        opacity: 0.5;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .img1{
+        padding-left: 30px;
+    }
+
 }
 
 /*Media query 780px*/
@@ -1179,7 +1237,7 @@ footer{
     }
 
     footer{
-        height: 750px;
+        height: 850px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
